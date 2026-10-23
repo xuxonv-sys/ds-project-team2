@@ -1,0 +1,160 @@
+
+# ============================================================
+# 1. Credenciales y configuraciones sensibles
+# ============================================================
+
+# Directorio de secretos y variables de entorno
+.secrets/
+.env
+.env.*
+!.env.example
+
+# Archivos de credenciales y configuraciones locales
+credentials.*
+database.yaml
+conf/local/
+
+# Llaves privadas y certificados
+*.pem
+*.key
+
+# ============================================================
+# 2. Python y uv
+# ============================================================
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos compilados y caché de Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Distribución e instalación de paquetes
+build/
+dist/
+*.egg-info/
+
+# Reportes de cobertura
+.coverage
+.coverage.*
+htmlcov/
+
+# ============================================================
+# 3. Jupyter e IPython
+# ============================================================
+
+# Checkpoints y archivos temporales de notebooks
+.ipynb_checkpoints/
+.jupyter_cache/
+
+# Notebooks que deben permanecer locales
+*only_local*.ipynb
+*local_only*.ipynb
+
+# Historial local de IPython
+.ipython/
+profile_default/
+
+# ============================================================
+# 4. Quarto
+# ============================================================
+
+# Caché y archivos internos de Quarto
+.quarto/
+
+# Directorios de salida de sitios y presentaciones
+_site/
+site/
+site_libs/
+
+# Recursos generados durante el renderizado
+*_files/
+*_files/**
+_freeze/
+*_cache/
+
+# Notebooks temporales generados por Quarto
+*.quarto_ipynb
+
+# Archivos intermedios de LaTeX
+*.tex
+
+# ============================================================
+# 5. Docker
+# ============================================================
+
+# Archivos de configuración local de Docker Compose
+compose.override.yaml
+docker-compose.override.yml
+
+# ============================================================
+# 6. PostgreSQL y bases de datos
+# ============================================================
+
+# Dumps y respaldos de bases de datos
+*.dump
+*.backup
+*.sql.gz
+
+# Archivos locales de autenticación de PostgreSQL
+.pgpass
+.pg_service.conf
+
+# ============================================================
+# 7. Datos, modelos y resultados
+# ============================================================
+
+# Datos locales y archivos CSV
+data/
+*.csv
+*.parquet
+
+# Matrices y modelos entrenados
+matrices/
+trained_models/
+
+# Resultados y referencias locales
+results/
+references/
+
+# Archivos temporales y registros
+logs/
+tmp/
+*.log
+*.debug
+
+# ============================================================
+# 8. Archivos de documentos generados
+# ============================================================
+
+# Productos intermedios y archivos específicos
+_manuscript/
+index.pdf
+
+# ============================================================
+# 9. Editores y sistema operativo
+# ============================================================
+
+# Vim: archivos temporales de edición
+*.swp
+*.swo
+*~
+
+# VS Code e IntelliJ
+.vscode/
+.idea/
+
+# macOS y Windows
+.DS_Store
+desktop.ini
+
+# Archivos temporales
+*.tmp
+*.bak
+
